@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YZZ2S0KVM8"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-YZZ2S0KVM8');
-</script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Coaching classes</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <script src="https://unpkg.com/feather-icons"></script>
-  </head>
-  <body>
-    <div class="notification is-info">
-      <p>List your Coaching center Details here.</p>
-      <p><a href="https://forms.gle/D67X5vUtNvw49ATt9">Click here to Add your Coaching center details</a></p>
-    </div>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YZZ2S0KVM8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-YZZ2S0KVM8');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Coaching classes</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+  <style>
+    .space-top {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="notification is-info">
+    <p>List your Coaching center Details here.</p>
+    <p><a href="https://forms.gle/D67X5vUtNvw49ATt9">Click here to Add your Coaching center details</a></p>
+  </div>
   <section class="section">
     <div class="container">
       <h1 class="title">
@@ -29,7 +36,50 @@
       <p class="subtitle">
         Near by coaching classes for TNPSC, UPSC, Bank Exams, NEET, Spoken English, etc.
       </p>
-
+      
+      <article class="message is-primary">
+        <div class="message-body">
+          <h1 class="title">
+            Angal Police Academy
+          </h1>
+          <h2 class="subtitle">
+            Vettamangalam, Karur
+          </h2>
+          <p>Fees: 5000</p>
+          <p>Email: Kadalraja97860@gmail.com</p>
+          <p class="space-top">
+            <strong>Coaching Offered</strong>
+            <div class="content">
+              <ol type="1">
+                <li>SSC Exams (CGL, CHSL, MTS, Stenographer, etc)</li>
+                <li>TNPSC Exams (Group Exams, VAO)</li>
+                <li>Police</li>
+              </ol>
+            </div>
+          </p>
+        </div>
+      </article>
+      
+      <article class="message is-info">
+        <div class="message-body">
+          <h1 class="title">
+            Thenkasi Akash friends IAS Academy
+          </h1>
+          <h2 class="subtitle">
+            Thirupathur, Velloor
+          </h2>
+          <p class="space-top">
+            <strong>Coaching Offered</strong>
+            <div class="content">
+              <ol type="1">
+                <li>SSC Exams (CGL, CHSL, MTS, Stenographer, etc)</li>
+                <li>TNPSC Exams (Group Exams, VAO)</li>
+                <li>TET</li>
+              </ol>
+            </div>
+          </p>
+        </div>
+      </article>
       <div class="content">Are you running a coaching center?
         <ul>
           <li>Spoken English</li>
@@ -42,34 +92,36 @@
           <li>Kerala PSC Exams (Degree, HSC, SSLC Level exams)</li>
           <li>Insurance Exams (LIC, NICL, NIACL, GIC, etc)</li>
           <li>Railway Exams</li>
-        </ul></div>
-      <p><a href="https://forms.gle/D67X5vUtNvw49ATt9">Click here to Add your Coaching center details</a></p>      
+        </ul>
+      </div>
+      <p><a href="https://forms.gle/D67X5vUtNvw49ATt9">Click here to Add your Coaching center details</a></p>
       <p style="margin-top: 20px;">
-          <button class="button is-primary" onclick="shareThisPage()">
-              <span class="icon">
-      <i data-feather="share-2"></i>
-    </span>
-              <span>Share thie page with your Friends.</span>
-          </button>
+        <button class="button is-primary" onclick="shareThisPage()">
+          <span class="icon">
+            <i data-feather="share-2"></i>
+          </span>
+          <span>Share thie page with your Friends.</span>
+        </button>
       </p>
     </div>
   </section>
   <script>
-      feather.replace();
+    feather.replace();
 
-      function shareThisPage() {
+    function shareThisPage() {
 
-          if (navigator.share) {
-              navigator
-                  .share({
-                      title: 'KalviApp Coaching',
-                      text: `List your Coaching center Details, Click here (https://forms.gle/D67X5vUtNvw49ATt9) to Add.`,
-                      url: location.href,
-                  })
-                  .then(() => console.log('Successful share'))
-                  .catch(error => console.log('Error sharing', error));
-          }
+      if (navigator.share) {
+        navigator
+          .share({
+            title: 'KalviApp Coaching',
+            text: `List your Coaching center Details, Click here (https://forms.gle/D67X5vUtNvw49ATt9) to Add.`,
+            url: location.href,
+          })
+          .then(() => console.log('Successful share'))
+          .catch(error => console.log('Error sharing', error));
       }
+    }
   </script>
-  </body>
+</body>
+
 </html>
